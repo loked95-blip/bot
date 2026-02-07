@@ -1,0 +1,10 @@
+name: anime-girl-bot
+description: Аниме-девочка Telegram бот с характером грубого дракона Тору
+version: 1.0.0
+runtime: python3.11
+build:
+  - pip install -r requirements.txt
+main: anime_girl_bot.py
+env:
+  - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+  - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
